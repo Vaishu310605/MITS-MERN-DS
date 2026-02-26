@@ -1,0 +1,43 @@
+style{
+    color: aqua;
+    font-size: large;
+}
+.subhead
+{
+    font-family: sans-serif;
+}
+#para
+{
+    background-color:#13b0c5 ;
+    color:red;
+}
+span,.subhead,h1{
+    background-color: chocolate;
+}
+*{
+    background-color: aquamarine;
+}
+ /*Des selector  */
+   div  p{
+    color:rgb(20, 166, 98);
+
+   }
+    /*child selector  */
+    div > p{
+    color:brown;
+
+   }
+   /* ATTRIBUTE SELECTOR */
+   input[type="text"]
+   {
+    color:blue;
+   }
+   /* Adjacent sibling */
+   h1 + p{
+    color:green;
+   }
+   /* General sibling */
+   h1 ~ p{
+    color:blue;
+
+   }
