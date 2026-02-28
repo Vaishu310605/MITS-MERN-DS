@@ -7,6 +7,33 @@
     <link rel="icon" href="../assets/Krishna aesthetic.jpg">
 </head>
 <body>
-    <script src="./script.js"></script>
+    <p id="para">THAnuuuu pagadala.</p>
+    <ul id="list">Heyyy</ul>
+    <button id="btn"></button>
+    <script>
+
+        //   document.getElementById("para").textContent="Hello world"
+        // document.getElementById("para").innerText="Hello world"
+        // document.getElementById("para").innerHTML="<p>Helllo ds</p>"
+        // document.getElementById("para");
+        // console.log(para);
+        // para.style.color="red"
+        // para.style.backgroundColor="pink"
+        // para.style.fontSize="30px"
+        // var para=document.getElementById("para");
+        // // console.log(para)
+        // const li=document.createElement("li");
+        // li.innerText="New Li Element";
+        // document.getElementById("list").append(li);
+        const btn=document.getElementById("btn");
+        btn.addEventListener("click",function()
+        {
+            
+        const li=document.createElement("li");
+        li.innerText="New Li Element";
+        document.getElementById("list").append(li);
+        })
+
+   </script>
 </body>
 </html>

@@ -107,23 +107,23 @@
 //     console.log("Arrow fun()");
 // }
 //spread operator
-var arr=[1,2,3];
-arr2=[...arr,4,5,6]
-console.log(arr2)
-//Deconstructing 
-var[m1,m2,m3]=[99,98,70];
-console.log(m1,m2,m3);
-var{name,age,dept,contact}
-={
-    name:"Puttiiiiii",
-    age:23,
-    dept:["DS","cse"],
-    contact:
-    {
-        mobile:9963886510,
-        mail:'vyshnavii@32465.gmail.com'
-    }
-}
+// var arr=[1,2,3];
+// arr2=[...arr,4,5,6]
+// console.log(arr2)
+// //Deconstructing 
+// var[m1,m2,m3]=[99,98,70];
+// console.log(m1,m2,m3);
+// var{name,age,dept,contact}
+// ={
+//     name:"Puttiiiiii",
+//     age:23,
+//     dept:["DS","cse"],
+//     contact:
+//     {
+//         mobile:9963886510,
+//         mail:'vyshnavii@32465.gmail.com'
+//     }
+// }
 // console.log(name,age,dept,contact);
 // var arr=[10,20,30,40,50]
 // for in
@@ -148,14 +148,36 @@ var{name,age,dept,contact}
 // arr.forEach((val,index)=>{
 //     console.log(val,index)
 // })
-var arr=[1,2,3,4,5]
+// var arr=[1,2,3,4,5]
 
 //map
-var double=arr.map((val)=>(val*2));
-console.log(double);
-//filter
-var even=arr.filter((val)=>(val%2===0));
-console.log(even);
-//reduce
-var total=arr.reduce((sum,val)=>(sum+val),0);
-console.log(total);
+// var double=arr.map((val)=>(val*2));
+// console.log(double);
+// //filter
+// var even=arr.filter((val)=>(val%2===0));
+// console.log(even);
+// //reduce
+// var total=arr.reduce((sum,val)=>(sum+val),0);
+// console.log(total);
+//Hoisting
+// console.log(a);
+// var a=10;
+// add();
+// function add()
+// {
+//     console.log(10+20);
+// }
+// var a=10; //global scope
+// if(true)
+// {
+//     var b=20; //block scope
+// }
+// console.log(a);
+// console.log(b);
+// const i=10;
+// if(true)
+// {
+//   const j=20;
+// }
+// console.log(i);
+// console.log(j);

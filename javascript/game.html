@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>RPS</title>
+</head>
+<body>
+    <h1>ROCK PAPER SCISSOR</h1>
+    <button onclick="game('rock')">ROCK</button>
+    <button onclick="game('paper')">PAPER</button>
+    <button onclick="game('scissor')">SCISSOR</button>
+    <p id="result"></p>
+    <script>
+        const game=(userChoice)=>{
+            var result="";
+            var choice=['rock','paper','scissor'];
+            var computerChoice= choice[Math.floor(Math.random()*3)]
+            console.log(computerChoice)
+            if(userChoice===computerChoice)
+        {
+            result="Draw😊"
+        }
+        else if((userChoice==='rock' && computerChoice==='paper') || (userChoice==='paper' && computerChoice==='scissor')||(userChoice=='scissor' && computerChoice))
+        {
+            result="Lost😒"
+        }
+        else{
+            result="won 😍"
+        }
+        document.getElementById('result').innerText=result;
+        }
+    </script>
+</body>
+</html>
