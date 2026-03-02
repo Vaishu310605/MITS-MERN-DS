@@ -181,3 +181,73 @@
 // }
 // console.log(i);
 // console.log(j);
+//promise
+// const promise=new Promise((resolve,reject)=>
+    
+// {
+//     var success=true;
+//     if(true)
+//     {
+//         resolve("task done");
+//     }
+//     else{
+//         reject("not done");
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+// }).catch((err)=>{
+//     console.log(err)
+// })
+// const promise=new Promise((resolve,reject)=>
+    
+// {
+//     var success=true;
+//     if(success)
+//     {
+//         setTimeout(()=>
+//         {
+//         resolve("task done");
+//         },2000);
+//     }
+//     else{
+//         reject("not done");
+//     }
+// })
+// promise.then((msg)=>console.log(msg))
+// .catch((err)=>console.log(err));
+//SetInterval
+// var c=1;
+// const IntervalCount=setInterval(()=>
+// {
+//     console.log(c);
+//     c++;
+//     if(c>5)
+//     {
+//         clearInterval(IntervalCount)
+//     }
+// },2000);
+//fetch from api
+// const getData=()=>
+// {
+//     return fetch("https://jsonplaceholder.typicode.com/users");
+// }
+// getData().then((res)=>res.json())
+// .then((data)=>console.log(data))
+// .catch((err)=>console.log(err));
+
+
+//async and await
+const getData=async()=>
+{
+    try{
+       const res=await  fetch("https://jsonplaceholder.typicode.com/users");
+       const data=await res.json();
+       console.log(data)
+    }
+    catch(err)
+    {
+        console.log(err)
+    }
+}
+getData();
