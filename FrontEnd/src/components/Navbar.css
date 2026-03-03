@@ -1,0 +1,23 @@
+*{
+    margin:0;
+}
+
+.navbar{
+    display:flex;
+    background-color:chocolate;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.list
+{
+    list-style: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+.list:hover
+{
+    background-color: cadetblue;
+    color: rgb(235, 242, 242);
+    cursor: pointer;
+}
